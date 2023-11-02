@@ -6,7 +6,7 @@
 
 body{
 	background-color:#B397FD ;
-	
+
 }
 
 
@@ -46,9 +46,18 @@ body{
 	width: 200px;
 	
 	height: auto;
-
+	position: relative;
 }
 
+
+
+.avatar__img{
+	position: relative;
+}
+
+.avatar .avatar__img {
+	z-index: 1;
+}
 
 .avatar img{
 	
@@ -61,22 +70,29 @@ body{
 .bio {
 	padding-top: 10px;
 	text-align: center;
-	
+
 }
 
 
 
-.name p,.nicname p{
+.name p{
 	color: #FFF;
 	text-align: center;
-	font-family: Lato;
-	font-size: 17px;
+	font-family: 'Dancing Script', cursive;
+	font-size: 27px;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: normal;
 
-	
+}
 
+.nicname p{
+	color: #FFF;
+	text-align: center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 20px;
+
+	
 }
 
 /*-------------------------------------------------------------------------------*/
@@ -92,8 +108,9 @@ body{
 
 }
 
-.main__container{
-	
+.main__container a{
+	text-decoration: none;
+	color: black;
 }
 
 .content__block{
@@ -104,7 +121,7 @@ body{
 
 	background: rgba(255, 255, 255, 0.30);
 
-	background-blend-mode: overlay;
+	
 	
 	display: flex;
 	flex-wrap: nowrap;
@@ -112,6 +129,18 @@ body{
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding: 5px;
+
+	background-blend-mode: overlay;
+
+	box-shadow: rgb(106, 155, 246) 4px 5px 10px; 
+}
+
+
+
+.content__block:hover{
+	background-color: rgba(255, 230, 230, 0.3);
+	transform: scale(1.05);
+	
 }
 
 .content__block img {
