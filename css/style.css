@@ -133,8 +133,8 @@ body{
 	background-blend-mode: overlay;
 
 	box-shadow: rgb(106, 155, 246) 4px 5px 10px; 
+	transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
 }
-
 
 
 .content__block:hover{
@@ -160,4 +160,4 @@ body{
 
 
 
-
+	
